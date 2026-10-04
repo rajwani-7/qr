@@ -1,5 +1,5 @@
 import { useRef, useState } from 'react'
-import { Download, FileArchive, FileImage, FileText, FileVideo, Link2, Share2, Sparkles, Upload, X } from 'lucide-react'
+import { Download, FileArchive, FileImage, FileText, FileVideo, Link2, Share2, Upload, X } from 'lucide-react'
 import { QRCodeCanvas } from 'qrcode.react'
 import './App.css'
 
@@ -69,8 +69,6 @@ function App() {
 
   return (
     <main className="app-shell">
-      <header className="topbar"><a className="brand" href="/" aria-label="AnyQR home"><span className="brand-mark"><Sparkles size={16} /></span>any<span>qr</span></a><div className="topbar-note"><span className="status-dot" />Runs in your browser</div></header>
-      <section className="intro"><p className="eyebrow">UNIVERSAL QR GENERATOR</p><h1>Turn anything into<br /><em>a scannable moment.</em></h1><p className="intro-copy">Links, notes, files and more. Create a clean QR code in seconds, with files hosted securely on Netlify.</p></section>
       <section className="workspace" aria-label="QR code generator">
         <div className="builder panel">
           <div className="panel-heading"><div><p className="section-kicker">01 / SOURCE</p><h2>What are we encoding?</h2></div><span className="step-count">1 of 2</span></div>
